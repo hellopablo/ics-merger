@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+//  CLI only please
+if (php_sapi_name() != "cli") {
+
+    echo 'This tool can only be used on the command line.';
+    exit(1);
+}
+
+//  Set to run indefinitely
+set_time_limit(0);
+
+//  Autoloading is cool
+require __DIR__ . '/../vendor/autoload.php';
+
+use IcsMerger\Command;
+use Symfony\Component\Console\Application;
+
+//  Instantiate and run the application
+$oApp = new Application('ICS Merger', '@package_version@');
+$oApp->add(new Command\Merge());
+$oApp->run();

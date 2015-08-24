@@ -1,0 +1,19 @@
+{
+    "name": "hellopablo/ics-merger",
+    "description": "Merge .ics files into a single .ics file.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pablo de la Pena",
+            "email": "pablo@hellopablo.co.uk"
+        }
+    ],
+    "require": {
+        "symfony/console": "~2.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "IcsMerger": "src"
+        }
+    }
+}
