@@ -1,0 +1,8 @@
+# OS Trash
+.DS_Store
+
+# Composer
+vendor/*
+
+# Compiled Binaries
+dist/icsmerger.phar
